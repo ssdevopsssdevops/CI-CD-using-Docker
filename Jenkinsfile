@@ -21,7 +21,14 @@ pipeline {
         }
         
 
-
+stage('build to develop') {
+              when {
+                  branch 'master'             
+              }
+              steps {
+                 echo "Working on master branch"
+              }
+         }
      
  
      
